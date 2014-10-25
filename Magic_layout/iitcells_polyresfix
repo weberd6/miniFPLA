@@ -1,0 +1,27 @@
+#!/bin/csh
+#  This is a tool to convert the polysilicon resistor in a .ext file
+#  It really comes out as a fet and has to be converted into a resist line
+#
+#  This used to be done like this:
+#	
+#   foreach name ($argv)
+#    echo "Processing '${name}'..."
+#    mv $name $name.orig.ext
+#    awk -f /import/cad1/bin/polyres_convert.awk $name.orig.ext>$name
+#    /usr/bin/rm -fr $name.orig.ext
+#   end
+#
+#   But awk is just too cool so I found a way to get rid of that dedicated .awk file
+#   and code it all inside this file:
+#  
+#   Johannes Grad, IIT
+#
+
+foreach name ($argv)
+ echo "Processing $name..." 
+ mv $name $name.orig.ext
+ awk ' {if ($2=="polyResistor") {print "resist " $13 " " $16 " 100";} else {print;}}' $name.orig.ext>$name
+ /usr/bin/rm -f $name.orig.ext
+end
+
+

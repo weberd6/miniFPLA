@@ -1,0 +1,182 @@
+magic
+tech scmos
+timestamp 1017812001
+use PadFC 3_0
+timestamp 949001400
+transform 1 0 -2499 0 1 1500
+box 327 -3 1003 673
+use PadBiDir PadBiDir_27
+timestamp 949001176
+transform 1 0 -1499 0 1 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_26
+timestamp 949001176
+transform 1 0 -1199 0 1 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_25
+timestamp 949001176
+transform 1 0 -899 0 1 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_24
+timestamp 949001176
+transform 1 0 -599 0 1 1500
+box -6 -3 303 1000
+use PadVdd PadVdd_0
+timestamp 1008952456
+transform 1 0 -299 0 1 1501
+box -3 -4 303 999
+use PadBiDir PadBiDir_23
+timestamp 949001176
+transform 1 0 1 0 1 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_22
+timestamp 949001176
+transform 1 0 301 0 1 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_21
+timestamp 949001176
+transform 1 0 601 0 1 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_20
+timestamp 949001176
+transform 1 0 901 0 1 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_19
+timestamp 949001176
+transform 1 0 1201 0 1 1500
+box -6 -3 303 1000
+use PadFC 3_1
+timestamp 949001400
+transform 0 1 1501 -1 0 2500
+box 327 -3 1003 673
+use PadBiDir PadBiDir_28
+timestamp 949001176
+transform 0 -1 -1499 1 0 1200
+box -6 -3 303 1000
+use PadBiDir PadBiDir_29
+timestamp 949001176
+transform 0 -1 -1499 1 0 900
+box -6 -3 303 1000
+use PadBiDir PadBiDir_30
+timestamp 949001176
+transform 0 -1 -1499 1 0 600
+box -6 -3 303 1000
+use PadBiDir PadBiDir_31
+timestamp 949001176
+transform 0 -1 -1499 1 0 300
+box -6 -3 303 1000
+use PadBiDir PadBiDir_32
+timestamp 949001176
+transform 0 -1 -1499 1 0 0
+box -6 -3 303 1000
+use PadBiDir PadBiDir_33
+timestamp 949001176
+transform 0 -1 -1499 1 0 -300
+box -6 -3 303 1000
+use PadBiDir PadBiDir_34
+timestamp 949001176
+transform 0 -1 -1499 1 0 -600
+box -6 -3 303 1000
+use PadBiDir PadBiDir_35
+timestamp 949001176
+transform 0 -1 -1499 1 0 -900
+box -6 -3 303 1000
+use PadBiDir PadBiDir_36
+timestamp 949001176
+transform 0 -1 -1499 1 0 -1200
+box -6 -3 303 1000
+use PadBiDir PadBiDir_18
+timestamp 949001176
+transform 0 1 1501 -1 0 1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_17
+timestamp 949001176
+transform 0 1 1501 -1 0 1200
+box -6 -3 303 1000
+use PadBiDir PadBiDir_16
+timestamp 949001176
+transform 0 1 1501 -1 0 900
+box -6 -3 303 1000
+use PadBiDir PadBiDir_15
+timestamp 949001176
+transform 0 1 1501 -1 0 600
+box -6 -3 303 1000
+use PadBiDir PadBiDir_14
+timestamp 949001176
+transform 0 1 1501 -1 0 300
+box -6 -3 303 1000
+use PadBiDir PadBiDir_13
+timestamp 949001176
+transform 0 1 1501 -1 0 0
+box -6 -3 303 1000
+use PadBiDir PadBiDir_12
+timestamp 949001176
+transform 0 1 1501 -1 0 -300
+box -6 -3 303 1000
+use PadBiDir PadBiDir_11
+timestamp 949001176
+transform 0 1 1501 -1 0 -600
+box -6 -3 303 1000
+use PadBiDir PadBiDir_10
+timestamp 949001176
+transform 0 1 1501 -1 0 -900
+box -6 -3 303 1000
+use PadBiDir PadBiDir_37
+timestamp 949001176
+transform 0 -1 -1499 1 0 -1500
+box -6 -3 303 1000
+use PadFC 3_2
+timestamp 949001400
+transform 0 -1 -1499 1 0 -2500
+box 327 -3 1003 673
+use PadBiDir PadBiDir_2
+timestamp 949001176
+transform 1 0 -1499 0 -1 -1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_1
+timestamp 949001176
+transform 1 0 -1199 0 -1 -1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_0
+timestamp 949001176
+transform 1 0 -899 0 -1 -1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_3
+timestamp 949001176
+transform 1 0 -599 0 -1 -1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_4
+timestamp 949001176
+transform 1 0 -299 0 -1 -1500
+box -6 -3 303 1000
+use PadGnd PadGnd_0
+timestamp 949001400
+transform 1 0 1 0 -1 -1500
+box -3 -3 303 1000
+use PadBiDir PadBiDir_6
+timestamp 949001176
+transform 1 0 301 0 -1 -1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_7
+timestamp 949001176
+transform 1 0 601 0 -1 -1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_8
+timestamp 949001176
+transform 1 0 901 0 -1 -1500
+box -6 -3 303 1000
+use PadBiDir PadBiDir_5
+timestamp 949001176
+transform 0 1 1501 -1 0 -1200
+box -6 -3 303 1000
+use PadFC 3_3
+timestamp 949001400
+transform -1 0 2501 0 -1 -1500
+box 327 -3 1003 673
+use PadBiDir PadBiDir_9
+timestamp 949001176
+transform 1 0 1201 0 -1 -1500
+box -6 -3 303 1000
+<< labels >>
+rlabel space 0 0 0 0 2 Core
+<< end >>
