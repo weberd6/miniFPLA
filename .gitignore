@@ -1,1 +1,4 @@
 *.bak
+VHDL/work/*
+VHDL/transcript
+VHDL/FPLA.*
