@@ -51,7 +51,7 @@ architecture plu_structural of plu is
               c : out std_logic);
     end component;
 
-    signal ld, lut_out, ff_in, ff_out, ld_mux_q, out_mux_q, config_or_test : std_logic;
+    signal ld, lut_out, ff_in, ff_out, ld_mux_q, out_mux_q, config_or_test, ld_or_test : std_logic;
 
 begin
 
@@ -59,6 +59,11 @@ begin
         inp1 => config,
         inp2 => test,
         outp => config_or_test);
+        
+    or1: orgate port map (
+        inp1 => ld,
+        inp2 => test,
+        outp => ld_or_test);
 
     lut0: lut port map (
         inp1 => inp1,
@@ -73,7 +78,7 @@ begin
     pstate_ff: Df_f port map (
         Q => ff_out,
         CLK => clk,
-        CE => ld,
+        CE => ld_or_test,
         RESET => reset,
         D => ff_in);
 

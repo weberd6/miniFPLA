@@ -77,8 +77,8 @@ begin
 
             top_left_corner: if ((i = 0) and (j = 0)) generate
                 plu_ij: plu port map(
-                    inp1 => left_inout_a(j),
-                    inp2 => top_inout_a(i),
+                    inp1 => left_inout_a(0),
+                    inp2 => top_inout_a(0),
                     outp => plu_out(m*j+i),
                     config => config,
                     test => normal_test,
@@ -86,8 +86,8 @@ begin
                     lut_shift_out => lut_shift(0),
                     mux_ctrl_shift_in => left_inout_b(0),
                     mux_ctrl_shift_out => mux_ctrl_shift(0),
-                    pstate_ff_shift_in => pstate_shift(0),
-                    pstate_ff_shift_out => pstate_shift(1),
+                    pstate_ff_shift_in => pstate_shift(1),
+                    pstate_ff_shift_out => pstate_shift(2),
                     reset => reset,
                     clk => clk
                 );
@@ -96,8 +96,8 @@ begin
                 demux_ij0: demux port map(
                     a => fpla_in(2*m-1),
                     s => config_or_test,
-                    b => left_inout_a(j),
-                    c => left_inout_b(j)
+                    b => left_inout_a(0),
+                    c => left_inout_b(0)
                 );
 
                 -- top demux
@@ -113,14 +113,14 @@ begin
                 plu_ij: plu port map(
                     inp1 => plu_out((j+1)*m+i),
                     inp2 => plu_out(j*m+(i-1)),
-                    outp => plu_out(j*m+1),
+                    outp => plu_out(j*m+i),
                     config => config,
                     test => normal_test,
                     lut_shift_in => lut_shift(m-1),
                     lut_shift_out => top_inout_b(m-1),
-                    mux_ctrl_shift_in => mux_ctrl_shift(m-2),
-                    mux_ctrl_shift_out => mux_ctrl_shift(m-1),
-                    pstate_ff_shift_in => pstate_shift(m*m-m/2-1),
+                    mux_ctrl_shift_in => mux_ctrl_shift(0),
+                    mux_ctrl_shift_out => mux_ctrl_shift(1),
+                    pstate_ff_shift_in => pstate_shift(2),
                     pstate_ff_shift_out => right_inout_b(0),
                     reset => reset,
                     clk => clk
@@ -141,6 +141,9 @@ begin
                     s => config_or_test,
                     c => fpla_out(m/2)
                 );
+                
+                top_inout_a(m-1) <= plu_out(j*m+i);
+                right_inout_a(0) <= plu_out(j*m+i);
             end generate top_right_corner;
 
             bottom_left_corner: if ((i = 0) and (j = (m-1))) generate
@@ -152,7 +155,7 @@ begin
                     test => normal_test,
                     lut_shift_in => lut_shift((m-1)*(m-1)-1),
                     lut_shift_out => bottom_inout_b(0),
-                    mux_ctrl_shift_in => mux_ctrl_shift(m*m-m/2-m+1),
+                    mux_ctrl_shift_in => mux_ctrl_shift(2),
                     mux_ctrl_shift_out => left_inout_b(m-1),
                     pstate_ff_shift_in => pstate_shift(m-2),
                     pstate_ff_shift_out => pstate_shift(m-1),
@@ -165,7 +168,7 @@ begin
                     a => bottom_inout_a(0),
                     b => bottom_inout_b(0),
                     s => config_or_test,
-                    c => fpla_out(2*m-m/2)
+                    c => fpla_out(2*m-m/2-1)
                 );
 
                 -- left mux
@@ -173,8 +176,11 @@ begin
                     a => left_inout_a(m-1),
                     b => left_inout_a(m-1),
                     s => config_or_test,
-                    c => fpla_out(2*m-m/2-1)
+                    c => fpla_out(2*m-m/2)
                 );
+                
+                left_inout_a(m-1) <= plu_out(j*m+i);
+                bottom_inout_a(0) <= plu_out(j*m+i);
             end generate bottom_left_corner;
 
             bottom_right_corner: if((i = (m-1)) and (j = (m-1))) generate
@@ -186,8 +192,8 @@ begin
                     test => normal_test,
                     lut_shift_in => bottom_inout_b(m-1),
                     lut_shift_out => lut_shift(m*(m-1)-1),
-                    mux_ctrl_shift_in => mux_ctrl_shift(m*m-m/2-1),
-                    mux_ctrl_shift_out => mux_ctrl_shift(m*m-m/2-2),
+                    mux_ctrl_shift_in => mux_ctrl_shift(1),
+                    mux_ctrl_shift_out => mux_ctrl_shift(2),
                     pstate_ff_shift_in => right_inout_b(m-1),
                     pstate_ff_shift_out => pstate_shift(0),
                     reset => reset,
