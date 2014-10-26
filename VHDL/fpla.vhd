@@ -86,8 +86,8 @@ begin
                     lut_shift_out => lut_shift(0),
                     mux_ctrl_shift_in => left_inout_b(0),
                     mux_ctrl_shift_out => mux_ctrl_shift(0),
-                    pstate_ff_shift_in => pstate_shift(1),
-                    pstate_ff_shift_out => pstate_shift(2),
+                    pstate_ff_shift_in => pstate_shift(m*m-m/2-m),
+                    pstate_ff_shift_out => pstate_shift(m*m-m/2-m+1),
                     reset => reset,
                     clk => clk
                 );
@@ -118,9 +118,9 @@ begin
                     test => normal_test,
                     lut_shift_in => lut_shift(m-1),
                     lut_shift_out => top_inout_b(m-1),
-                    mux_ctrl_shift_in => mux_ctrl_shift(0),
-                    mux_ctrl_shift_out => mux_ctrl_shift(1),
-                    pstate_ff_shift_in => pstate_shift(2),
+                    mux_ctrl_shift_in => mux_ctrl_shift(m-2),
+                    mux_ctrl_shift_out => mux_ctrl_shift(m-1),
+                    pstate_ff_shift_in => pstate_shift(m*m-m/2-1),
                     pstate_ff_shift_out => right_inout_b(0),
                     reset => reset,
                     clk => clk
@@ -155,7 +155,7 @@ begin
                     test => normal_test,
                     lut_shift_in => lut_shift((m-1)*(m-1)-1),
                     lut_shift_out => bottom_inout_b(0),
-                    mux_ctrl_shift_in => mux_ctrl_shift(2),
+                    mux_ctrl_shift_in => mux_ctrl_shift(m*m-m/2-1),
                     mux_ctrl_shift_out => left_inout_b(m-1),
                     pstate_ff_shift_in => pstate_shift(m-2),
                     pstate_ff_shift_out => pstate_shift(m-1),
@@ -174,7 +174,7 @@ begin
                 -- left mux
                 mux_ji: mux port map(
                     a => left_inout_a(m-1),
-                    b => left_inout_a(m-1),
+                    b => left_inout_b(m-1),
                     s => config_or_test,
                     c => fpla_out(2*m-m/2)
                 );
@@ -192,8 +192,8 @@ begin
                     test => normal_test,
                     lut_shift_in => bottom_inout_b(m-1),
                     lut_shift_out => lut_shift(m*(m-1)-1),
-                    mux_ctrl_shift_in => mux_ctrl_shift(1),
-                    mux_ctrl_shift_out => mux_ctrl_shift(2),
+                    mux_ctrl_shift_in => mux_ctrl_shift(m*m-m/2-m),
+                    mux_ctrl_shift_out => mux_ctrl_shift(m*m-m/2-m+1),
                     pstate_ff_shift_in => right_inout_b(m-1),
                     pstate_ff_shift_out => pstate_shift(0),
                     reset => reset,
