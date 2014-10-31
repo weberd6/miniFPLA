@@ -1,0 +1,44 @@
+magic
+tech scmos
+timestamp 1414788954
+<< metal1 >>
+rect 247 235 259 241
+rect 238 135 253 141
+rect 200 112 235 118
+use DFFPOSRL  DFFPOSRL_1
+timestamp 1414708719
+transform 1 0 229 0 1 134
+box 16 256 205 376
+use DFFPOSRL  DFFPOSRL_2
+timestamp 1414708719
+transform 1 0 236 0 1 2
+box 16 256 205 376
+use DFFPOSRL  DFFPOSRL_0
+timestamp 1414708719
+transform 1 0 233 0 1 -128
+box 16 256 205 376
+use MUX2X1  MUX2X1_1
+timestamp 1053021328
+transform 1 0 237 0 1 15
+box -5 -3 53 105
+use MUX2X1  MUX2X1_2
+timestamp 1053021328
+transform 1 0 288 0 1 15
+box -5 -3 53 105
+use INVX1  INVX1_1
+timestamp 1053022145
+transform 1 0 330 0 1 15
+box -9 -3 26 105
+use INVX1  INVX1_0
+timestamp 1053022145
+transform 1 0 346 0 1 15
+box -9 -3 26 105
+use MUX2X1  MUX2X1_0
+timestamp 1053021328
+transform 1 0 362 0 1 15
+box -5 -3 53 105
+use LUT  LUT_0
+timestamp 1414724010
+transform 1 0 65 0 1 -78
+box -65 78 193 594
+<< end >>
