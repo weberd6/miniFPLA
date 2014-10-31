@@ -1,0 +1,270 @@
+timestamp 1414724010
+version 7.5
+tech scmos
+style AMI0.5um(amic5)from:T24H
+scale 1000 1 30
+resistclasses 82200 105200 808000 808000 1 22000 40300 40300 90 90 50
+use MUX2X1 MUX2X1_0 1 0 133 0 1 478
+use DFFPOSRL DFFPOSRL_3 1 0 -68 0 1 212
+use MUX2X1 MUX2X1_1 1 0 140 0 1 346
+use DFFPOSRL DFFPOSRL_2 1 0 -68 0 1 80
+use MUX2X1 MUX2X1_2 1 0 133 0 1 216
+use DFFPOSRL DFFPOSRL_1 1 0 -68 0 1 -50
+use DFFPOSRL DFFPOSRL_0 1 0 -68 0 1 -173
+node "xp_n3_78#" 0 0 -3 78 m2p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_127_84#" 0 0 127 84 m2p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_47_84#" 0 0 47 84 m2p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_n45_84#" 0 0 -45 84 m2p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_165_90#" 0 0 165 90 m1p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_n62_329#" 0 0 -62 329 m1p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_185_379#" 0 0 185 379 m1p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_n62_460#" 0 0 -62 460 m1p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_n65_575#" 0 0 -65 575 m1p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xp_n13_590#" 0 0 -13 590 m2p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "shift_out" 3 4341.6 127 84 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 460 238 0 0
+node "m1_n13_136#" 4 6208.8 -13 136 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 616 316 0 0
+node "Q2" 0 478.8 127 250 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 0 0 0 0
+node "m1_127_199#" 3 5152.8 127 199 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192 112 256 136 0 0
+node "m1_n13_259#" 5 8173.8 -13 259 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 852 434 0 0
+node "m1_127_322#" 2 4096.8 127 322 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 64 268 142 0 0
+node "m1_135_343#" 0 939.6 135 343 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 36 0 0 0 0
+node "outp" 0 948.6 174 379 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 38 0 0 0 0
+node "Q1" 0 478.8 127 382 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 0 0 0 0
+node "lutmux2" 4 7009.8 167 249 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116 74 576 296 0 0
+node "inp1" 6 13575.6 -62 329 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 848 440 256 136 0 0
+node "m1_n13_389#" 4 5944.05 -13 389 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 640 328 0 0
+node "m1_135_443#" 0 939.6 135 443 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 36 0 0 0 0
+node "Gnd" 7 19177.8 135 90 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 324 156 2360 802 0 0
+node "lutmux1" 4 6988.2 150 389 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140 94 520 276 0 0
+node "Clk" 11 17274 47 126 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 64 1724 870 0 0
+node "m2" 0 531 31 511 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 0 0 0 0
+node "m1" 0 531 -17 511 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 0 0 0 0
+node "Q0" 0 478.8 127 515 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 0 0 0 0
+node "inp2" 11 20598.6 -62 460 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 836 442 1064 540 0 0
+node "Reset" 11 17869.2 -3 136 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 64 1788 902 0 0
+node "shift_in" 2 3195.6 -13 521 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 292 154 0 0
+node "Load" 11 17286.9 -45 136 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64 64 1764 890 0 0
+node "m1_127_468#" 4 7034.4 127 468 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 280 156 344 188 0 0
+node "Vdd" 7 19481.1 -65 575 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 384 176 2346 794 0 0
+node "m1_127_584#" 2 4096.8 127 584 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 64 268 142 0 0
+cap "m1_135_443#" "inp2" 266.28
+cap "inp1" "m1_n13_259#" 426.72
+cap "m1_n13_389#" "inp2" 903.84
+cap "inp1" "Reset" 275.52
+cap "m1_127_199#" "Gnd" 354.48
+cap "inp1" "Clk" 275.52
+cap "m1_127_468#" "inp2" 551.04
+cap "inp1" "inp2" 275.52
+cap "lutmux1" "m1_127_468#" 275.52
+cap "Vdd" "Load" 929.88
+cap "inp2" "m1_135_343#" 266.28
+cap "shift_out" "m1_127_199#" 117.6
+cap "Reset" "inp2" 275.52
+cap "inp2" "m1_127_322#" 275.52
+cap "m1_127_468#" "Gnd" 354.48
+cap "inp2" "Clk" 275.52
+cap "inp1" "Vdd" 354.48
+cap "inp1" "Load" 275.52
+cap "lutmux2" "m1_127_199#" 216.72
+cap "Vdd" "inp2" 354.48
+cap "inp1" "m1_135_343#" 354.48
+cap "lutmux1" "Gnd" 354.48
+cap "inp2" "Load" 275.52
+cap "lutmux2" "outp" 275.52
+cap "DFFPOSRL_0/Reset" "DFFPOSRL_0/a_65_276#" 491.4
+cap "DFFPOSRL_0/Reset" "DFFPOSRL_0/Gnd" 60.48
+cap "DFFPOSRL_0/Reset" "DFFPOSRL_0/Vdd" 6.75
+cap "DFFPOSRL_0/D" "DFFPOSRL_0/Vdd" 198.09
+cap "DFFPOSRL_0/Gnd" "DFFPOSRL_0/Load" 60.48
+cap "DFFPOSRL_0/Vdd" "DFFPOSRL_0/Load" 6.75
+cap "DFFPOSRL_0/Reset" "DFFPOSRL_0/muxout1" 40.32
+cap "DFFPOSRL_0/D" "DFFPOSRL_0/Vdd" 9.45
+cap "DFFPOSRL_0/a_23_276#" "DFFPOSRL_0/Load" 524.16
+cap "DFFPOSRL_0/Vdd" "DFFPOSRL_0/Clk" 16.2
+cap "DFFPOSRL_0/muxout2" "DFFPOSRL_0/Clk" 47.88
+cap "DFFPOSRL_0/Q" "DFFPOSRL_0/Gnd" 60.48
+cap "DFFPOSRL_0/a_107_272#" "DFFPOSRL_0/Clk" 30.24
+cap "DFFPOSRL_0/Clk" "DFFPOSRL_0/Gnd" 292.32
+cap "DFFPOSRL_0/Vdd" "DFFPOSRL_0/Clk" 307.8
+cap "DFFPOSRL_1/Q" "DFFPOSRL_0/Vdd" 185.85
+cap "DFFPOSRL_1/Load" "DFFPOSRL_1/Gnd" 60.48
+cap "DFFPOSRL_1/D" "DFFPOSRL_1/Vdd" 9.45
+cap "DFFPOSRL_1/Reset" "DFFPOSRL_1/Vdd" 5.4
+cap "DFFPOSRL_1/Reset" "DFFPOSRL_0/a_65_276#" 50.4
+cap "DFFPOSRL_1/Q" "DFFPOSRL_1/Gnd" 317.88
+cap "DFFPOSRL_1/Q" "DFFPOSRL_0/Q" 40.32
+cap "DFFPOSRL_1/Vdd" "DFFPOSRL_0/Vdd" 37.8
+cap "DFFPOSRL_1/a_23_276#" "DFFPOSRL_1/Load" 312.48
+cap "DFFPOSRL_1/Reset" "DFFPOSRL_0/Vdd" 109.08
+cap "DFFPOSRL_1/Load" "DFFPOSRL_0/a_23_276#" 50.4
+cap "DFFPOSRL_1/Reset" "DFFPOSRL_1/a_65_276#" 279.72
+cap "DFFPOSRL_1/Load" "DFFPOSRL_1/Vdd" 5.4
+cap "DFFPOSRL_1/a_23_276#" "DFFPOSRL_1/Q" 30.24
+cap "DFFPOSRL_1/Vdd" "DFFPOSRL_1/D" 51.12
+cap "DFFPOSRL_1/Reset" "DFFPOSRL_1/Gnd" 60.48
+cap "DFFPOSRL_1/Reset" "DFFPOSRL_0/Q" 40.32
+cap "DFFPOSRL_0/D" "DFFPOSRL_1/Q" 14.85
+cap "DFFPOSRL_1/Reset" "DFFPOSRL_1/muxout1" 40.32
+cap "DFFPOSRL_1/Load" "DFFPOSRL_0/Vdd" 63.72
+cap "DFFPOSRL_1/a_107_272#" "DFFPOSRL_1/Clk" 30.24
+cap "DFFPOSRL_0/Q" "DFFPOSRL_1/Clk" 40.32
+cap "DFFPOSRL_0/Vdd" "DFFPOSRL_1/Clk" 192.24
+cap "DFFPOSRL_1/Vdd" "DFFPOSRL_1/Clk" 75.96
+cap "DFFPOSRL_1/muxout2" "DFFPOSRL_1/Clk" 47.88
+cap "DFFPOSRL_1/Vdd" "DFFPOSRL_1/Clk" 16.2
+cap "MUX2X1_2/gnd" "DFFPOSRL_1/Clk" 292.32
+cap "MUX2X1_2/gnd" "MUX2X1_2/S" 70.2
+cap "MUX2X1_2/A" "MUX2X1_2/Y" -7.10543e-15
+cap "MUX2X1_2/gnd" "MUX2X1_2/Y" 421.56
+cap "MUX2X1_2/gnd" "DFFPOSRL_1/Vdd" 48.6
+cap "DFFPOSRL_1/Vdd" "MUX2X1_2/S" 5.4
+cap "DFFPOSRL_1/Vdd" "MUX2X1_2/B" 18.9
+cap "MUX2X1_2/gnd" "MUX2X1_2/a_2_10#" 26.28
+cap "MUX2X1_2/vdd" "MUX2X1_2/B" 68.58
+cap "MUX2X1_2/a_2_10#" "MUX2X1_2/B" 30.24
+cap "MUX2X1_2/S" "MUX2X1_2/a_2_10#" 98.28
+cap "DFFPOSRL_1/Vdd" "MUX2X1_2/Y" 75.6
+cap "MUX2X1_2/gnd" "MUX2X1_2/A" 223.56
+cap "Reset" "DFFPOSRL_2/muxout1" 40.32
+cap "DFFPOSRL_1/Vdd" "m1_n13_259#" 320.58
+cap "DFFPOSRL_1/Q" "m1_n13_259#" 63
+cap "DFFPOSRL_1/a_23_276#" "Load" 262.08
+cap "DFFPOSRL_1/Vdd" "Load" 65.07
+cap "Reset" "DFFPOSRL_2/Gnd" 60.48
+cap "Load" "DFFPOSRL_2/Load" 13.5
+cap "Reset" "DFFPOSRL_2/a_65_276#" 171.36
+cap "Reset" "DFFPOSRL_1/Reset" 9.45
+cap "Load" "DFFPOSRL_1/Load" 9.45
+cap "DFFPOSRL_2/a_23_276#" "m1_n13_259#" 10.08
+cap "Reset" "DFFPOSRL_1/a_65_276#" 262.08
+cap "m1_n13_259#" "DFFPOSRL_2/Gnd" 317.88
+cap "Reset" "DFFPOSRL_1/Q" 40.32
+cap "Reset" "DFFPOSRL_1/Vdd" 110.43
+cap "DFFPOSRL_2/a_23_276#" "Load" 194.04
+cap "DFFPOSRL_1/D" "m1_n13_259#" 45.9
+cap "Load" "DFFPOSRL_2/Gnd" 60.48
+cap "DFFPOSRL_2/Clk" "DFFPOSRL_1/Q" 40.32
+cap "DFFPOSRL_2/Clk" "MUX2X1_1/gnd" 292.32
+cap "DFFPOSRL_1/Vdd" "DFFPOSRL_2/Clk" 424.08
+cap "MUX2X1_2/a_2_10#" "MUX2X1_1/gnd" 91.8
+cap "MUX2X1_2/Y" "MUX2X1_1/gnd" 285.12
+cap "inp1" "MUX2X1_1/gnd" -7.10543e-15
+cap "inp2" "DFFPOSRL_1/Vdd" 110.43
+cap "MUX2X1_1/gnd" "lutmux2" 60.48
+cap "MUX2X1_1/gnd" "DFFPOSRL_1/Vdd" 125.82
+cap "MUX2X1_1/gnd" "MUX2X1_1/a_17_10#" 81
+cap "MUX2X1_1/S" "MUX2X1_1/gnd" 16.2
+cap "MUX2X1_1/gnd" "MUX2X1_1/a_2_10#" 77.22
+cap "MUX2X1_1/gnd" "MUX2X1_1/Y" 27
+cap "lutmux2" "DFFPOSRL_1/Vdd" 246.24
+cap "MUX2X1_1/S" "inp1" 13.5
+cap "DFFPOSRL_1/Q" "DFFPOSRL_1/Vdd" 424.08
+cap "inp1" "MUX2X1_1/a_2_10#" 194.04
+cap "MUX2X1_2/a_2_10#" "inp2" 262.08
+cap "MUX2X1_2/S" "inp2" 9.45
+cap "MUX2X1_1/gnd" "inp2" -7.10543e-15
+cap "DFFPOSRL_2/Load" "DFFPOSRL_3/Gnd" 30.24
+cap "DFFPOSRL_3/muxout1" "DFFPOSRL_2/Reset" 40.32
+cap "DFFPOSRL_2/Vdd" "DFFPOSRL_2/D" 375.75
+cap "DFFPOSRL_2/Reset" "DFFPOSRL_2/Vdd" 115.83
+cap "DFFPOSRL_2/Load" "DFFPOSRL_2/Vdd" 70.47
+cap "DFFPOSRL_2/Q" "DFFPOSRL_2/a_23_276#" 20.16
+cap "DFFPOSRL_2/Load" "DFFPOSRL_2/a_23_276#" 380.52
+cap "DFFPOSRL_3/Gnd" "DFFPOSRL_2/D" 30.24
+cap "DFFPOSRL_2/Q" "DFFPOSRL_2/D" 57.96
+cap "DFFPOSRL_3/Gnd" "DFFPOSRL_2/Reset" 30.24
+cap "DFFPOSRL_2/Reset" "DFFPOSRL_2/Q" 40.32
+cap "DFFPOSRL_2/a_65_276#" "DFFPOSRL_2/Reset" 370.44
+cap "DFFPOSRL_2/Clk" "MUX2X1_0/gnd" 30.24
+cap "DFFPOSRL_2/Clk" "DFFPOSRL_2/Vdd" 516.24
+cap "DFFPOSRL_2/Clk" "DFFPOSRL_2/a_107_272#" 30.24
+cap "DFFPOSRL_2/Clk" "DFFPOSRL_2/Q" 40.32
+cap "DFFPOSRL_2/Clk" "DFFPOSRL_2/muxout2" 47.88
+cap "MUX2X1_0/gnd" "MUX2X1_1/a_2_10#" 211.68
+cap "MUX2X1_1/B" "DFFPOSRL_2/Vdd" 511.56
+cap "MUX2X1_0/gnd" "inp2" 30.24
+cap "MUX2X1_0/gnd" "MUX2X1_1/Y" 54
+cap "MUX2X1_0/gnd" "MUX2X1_1/a_17_50#" 149.85
+cap "MUX2X1_0/gnd" "MUX2X1_1/S" 133.65
+cap "MUX2X1_1/A" "MUX2X1_1/Y" -7.10543e-15
+cap "MUX2X1_0/gnd" "DFFPOSRL_2/Q" 30.24
+cap "MUX2X1_1/a_2_10#" "MUX2X1_1/S" 20.16
+cap "MUX2X1_0/gnd" "DFFPOSRL_2/Vdd" 158.22
+cap "MUX2X1_0/gnd" "MUX2X1_1/B" 30.24
+cap "MUX2X1_1/B" "MUX2X1_1/a_2_10#" 30.24
+cap "inp2" "DFFPOSRL_2/Vdd" 275.4
+cap "DFFPOSRL_3/a_65_276#" "DFFPOSRL_3/Reset" 181.44
+cap "DFFPOSRL_3/Vdd" "DFFPOSRL_3/D" 315.81
+cap "DFFPOSRL_3/Load" "DFFPOSRL_3/a_23_276#" 214.2
+cap "DFFPOSRL_3/Q" "DFFPOSRL_3/a_23_276#" 30.24
+cap "DFFPOSRL_3/Reset" "DFFPOSRL_3/Gnd" 30.24
+cap "DFFPOSRL_3/Load" "DFFPOSRL_3/Gnd" 30.24
+cap "DFFPOSRL_3/Q" "DFFPOSRL_3/Gnd" 287.64
+cap "DFFPOSRL_3/Clk" "MUX2X1_0/gnd" 262.08
+cap "MUX2X1_0/Y" "MUX2X1_0/A" 36.45
+cap "MUX2X1_0/gnd" "MUX2X1_0/S" 30.24
+cap "MUX2X1_0/a_2_10#" "MUX2X1_0/S" 214.2
+cap "MUX2X1_0/Y" "MUX2X1_0/gnd" 193.32
+cap "MUX2X1_0/B" "MUX2X1_0/vdd" 470.52
+cap "MUX2X1_0/gnd" "MUX2X1_0/A" 30.24
+cap "MUX2X1_0/B" "MUX2X1_0/a_2_10#" 30.24
+cap "shift_in" "DFFPOSRL_3/Vdd" 41.04
+cap "shift_in" "DFFPOSRL_3/Q" 40.32
+cap "DFFPOSRL_3/Vdd" "DFFPOSRL_3/Q" 41.04
+merge "DFFPOSRL_3/Reset" "DFFPOSRL_2/Reset" -6537.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64 -64 -400 -200 0 0
+merge "DFFPOSRL_2/Reset" "DFFPOSRL_1/Reset"
+merge "DFFPOSRL_1/Reset" "DFFPOSRL_0/Reset"
+merge "DFFPOSRL_0/Reset" "Reset"
+merge "DFFPOSRL_3/Vdd" "MUX2X1_1/vdd" -2711.7 0 0 0 0 -513 -132 0 0 0 0 0 0 0 0 0 0 -44 -38 0 0 0 0
+merge "MUX2X1_1/vdd" "DFFPOSRL_2/Vdd"
+merge "DFFPOSRL_2/Vdd" "DFFPOSRL_1/Vdd"
+merge "DFFPOSRL_1/Vdd" "MUX2X1_2/vdd"
+merge "MUX2X1_2/vdd" "DFFPOSRL_0/Vdd"
+merge "DFFPOSRL_0/Vdd" "Vdd"
+merge "Vdd" "m1_135_443#"
+merge "m1_135_443#" "MUX2X1_0/vdd"
+merge "DFFPOSRL_3/Q" "DFFPOSRL_2/D" -1324.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 -52 0 0 0 0
+merge "DFFPOSRL_2/D" "m1_n13_389#"
+merge "m1_n13_389#" "MUX2X1_0/B"
+merge "MUX2X1_0/B" "m1_127_584#"
+merge "m1_127_584#" "Q0"
+merge "DFFPOSRL_1/Q" "DFFPOSRL_0/D" -770.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 152 0 0 0
+merge "DFFPOSRL_0/D" "m1_n13_136#"
+merge "m1_n13_136#" "Q2"
+merge "Q2" "MUX2X1_2/B"
+merge "MUX2X1_2/B" "m1_127_322#"
+merge "DFFPOSRL_3/Load" "DFFPOSRL_2/Load" -6455.55 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64 -64 -400 -200 0 0
+merge "DFFPOSRL_2/Load" "DFFPOSRL_1/Load"
+merge "DFFPOSRL_1/Load" "DFFPOSRL_0/Load"
+merge "DFFPOSRL_0/Load" "Load"
+merge "MUX2X1_1/A" "MUX2X1_2/Y" -4544.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 -400 -200 0 0
+merge "MUX2X1_2/Y" "lutmux2"
+merge "DFFPOSRL_3/muxout1" "m1" -531 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -22 0 0 0 0
+merge "MUX2X1_0/A" "DFFPOSRL_2/Q" -1408.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 -44 24 -34 0 0
+merge "DFFPOSRL_2/Q" "Q1"
+merge "Q1" "DFFPOSRL_1/D"
+merge "DFFPOSRL_1/D" "m1_n13_259#"
+merge "m1_n13_259#" "m1_127_468#"
+merge "DFFPOSRL_3/muxout2" "m2" -531 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -22 0 0 0 0
+merge "MUX2X1_1/S" "inp1" -344.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 -16 0 0 0 0
+merge "DFFPOSRL_3/Clk" "DFFPOSRL_2/Clk" -3124.35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -64 0 0 0 0
+merge "DFFPOSRL_2/Clk" "DFFPOSRL_1/Clk"
+merge "DFFPOSRL_1/Clk" "DFFPOSRL_0/Clk"
+merge "DFFPOSRL_0/Clk" "Clk"
+merge "DFFPOSRL_3/Gnd" "MUX2X1_0/gnd" -5285.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -174 -160 0 0 0 0
+merge "MUX2X1_0/gnd" "DFFPOSRL_2/Gnd"
+merge "DFFPOSRL_2/Gnd" "MUX2X1_1/gnd"
+merge "MUX2X1_1/gnd" "m1_135_343#"
+merge "m1_135_343#" "DFFPOSRL_1/Gnd"
+merge "DFFPOSRL_1/Gnd" "MUX2X1_2/gnd"
+merge "MUX2X1_2/gnd" "DFFPOSRL_0/Gnd"
+merge "DFFPOSRL_0/Gnd" "Gnd"
+merge "MUX2X1_0/S" "MUX2X1_2/S" -22246.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -832 -448 -800 -600 0 0
+merge "MUX2X1_2/S" "inp2"
+merge "MUX2X1_1/Y" "outp" -363.6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -16 0 0 0 0
+merge "MUX2X1_2/A" "DFFPOSRL_0/Q" -1665.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 0 -46 0 0
+merge "DFFPOSRL_0/Q" "shift_out"
+merge "shift_out" "m1_127_199#"
+merge "MUX2X1_0/Y" "MUX2X1_1/B" -1543.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56 -44 0 0 0 0
+merge "MUX2X1_1/B" "lutmux1"
+merge "DFFPOSRL_3/D" "shift_in" -1132.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -64 -36 0 0

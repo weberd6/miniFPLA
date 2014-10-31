@@ -1,0 +1,186 @@
+magic
+tech scmos
+timestamp 1414724010
+<< metal1 >>
+rect 127 584 143 588
+rect -65 575 -56 581
+rect -50 575 -43 581
+rect 167 525 171 529
+rect 167 521 176 525
+rect 127 515 131 521
+rect -17 511 -10 515
+rect 31 511 38 515
+rect 161 511 167 515
+rect 131 468 176 472
+rect -62 460 135 464
+rect 154 452 167 456
+rect -50 443 -42 449
+rect 135 443 147 449
+rect 174 389 181 393
+rect 127 382 131 388
+rect 174 379 189 383
+rect 135 343 147 349
+rect -62 329 142 333
+rect 127 322 143 326
+rect -50 313 -42 319
+rect 127 250 131 256
+rect 167 249 181 253
+rect 127 199 167 203
+rect -50 190 -42 196
+rect 135 90 157 96
+rect 163 90 171 96
+<< m2contact >>
+rect 143 584 147 588
+rect -56 575 -50 581
+rect -45 521 -41 525
+rect -13 521 -9 525
+rect -3 521 1 525
+rect 135 521 139 525
+rect 143 521 147 525
+rect 176 521 180 525
+rect 47 511 51 515
+rect 167 511 171 515
+rect 157 475 163 481
+rect 127 468 131 472
+rect 176 468 180 472
+rect 135 460 139 464
+rect 150 452 154 456
+rect 167 452 171 456
+rect -56 443 -50 449
+rect -45 389 -41 393
+rect -13 389 -9 393
+rect -3 389 1 393
+rect 142 389 146 393
+rect 150 389 154 393
+rect 181 389 185 393
+rect 47 379 51 383
+rect 159 343 165 349
+rect 142 329 146 333
+rect 143 322 147 326
+rect -56 313 -50 319
+rect -45 259 -41 263
+rect -13 259 -9 263
+rect -3 259 1 263
+rect 135 259 139 263
+rect 143 259 147 263
+rect 167 259 171 263
+rect 47 249 51 253
+rect 181 249 185 253
+rect 157 213 163 219
+rect 167 199 171 203
+rect -56 190 -50 196
+rect -45 136 -41 140
+rect -13 136 -9 140
+rect -3 136 1 140
+rect 47 126 51 130
+rect 157 90 163 96
+<< metal2 >>
+rect -56 449 -50 575
+rect -13 525 -9 594
+rect 143 525 147 584
+rect -56 319 -50 443
+rect -56 196 -50 313
+rect -45 393 -41 521
+rect -37 463 -33 525
+rect -37 459 -16 463
+rect -20 453 -16 459
+rect -20 449 -9 453
+rect -45 263 -41 389
+rect -37 333 -33 448
+rect -13 393 -9 449
+rect -3 393 1 521
+rect -37 329 -18 333
+rect -22 323 -18 329
+rect -22 319 -9 323
+rect -45 140 -41 259
+rect -37 210 -33 266
+rect -13 263 -9 319
+rect -3 263 1 389
+rect -37 206 -16 210
+rect -20 199 -16 206
+rect -20 195 -9 199
+rect -13 140 -9 195
+rect -3 140 1 259
+rect -45 84 -41 136
+rect -3 78 1 136
+rect 47 383 51 511
+rect 127 443 131 468
+rect 135 464 139 521
+rect 47 253 51 379
+rect 135 263 139 460
+rect 150 393 154 452
+rect 142 333 146 389
+rect 157 355 163 475
+rect 167 456 171 511
+rect 176 472 180 521
+rect 157 354 165 355
+rect 159 349 165 354
+rect 159 339 165 343
+rect 157 333 165 339
+rect 143 263 147 322
+rect 47 130 51 249
+rect 157 219 163 333
+rect 47 84 51 126
+rect 127 84 131 199
+rect 157 96 163 213
+rect 167 203 171 259
+rect 181 253 185 389
+<< m1p >>
+rect -65 575 -59 581
+rect -62 460 -58 464
+rect 185 379 189 383
+rect -62 329 -58 333
+rect 165 90 171 96
+<< m2p >>
+rect -13 590 -9 594
+rect -45 84 -41 88
+rect 47 84 51 88
+rect 127 84 131 88
+rect -3 78 1 82
+use MUX2X1  MUX2X1_0
+timestamp 1053021328
+transform 1 0 133 0 1 478
+box -5 -3 53 105
+use DFFPOSRL  DFFPOSRL_3
+timestamp 1414708719
+transform 1 0 -68 0 1 212
+box 16 256 205 376
+use MUX2X1  MUX2X1_1
+timestamp 1053021328
+transform 1 0 140 0 1 346
+box -5 -3 53 105
+use DFFPOSRL  DFFPOSRL_2
+timestamp 1414708719
+transform 1 0 -68 0 1 80
+box 16 256 205 376
+use MUX2X1  MUX2X1_2
+timestamp 1053021328
+transform 1 0 133 0 1 216
+box -5 -3 53 105
+use DFFPOSRL  DFFPOSRL_1
+timestamp 1414708719
+transform 1 0 -68 0 1 -50
+box 16 256 205 376
+use DFFPOSRL  DFFPOSRL_0
+timestamp 1414708719
+transform 1 0 -68 0 1 -173
+box 16 256 205 376
+<< labels >>
+rlabel metal2 -43 85 -43 85 1 Load
+rlabel metal1 168 91 168 91 1 Gnd
+rlabel metal1 -60 330 -60 330 1 inp1
+rlabel metal2 49 85 49 85 1 Clk
+rlabel metal1 187 380 187 380 1 outp
+rlabel metal2 -1 79 -1 79 1 Reset
+rlabel metal1 -60 461 -60 461 1 inp2
+rlabel metal2 -11 591 -11 591 1 shift_in
+rlabel metal1 129 517 129 517 1 Q0
+rlabel metal1 129 384 129 384 1 Q1
+rlabel metal1 129 252 129 252 1 Q2
+rlabel metal2 129 85 129 85 1 shift_out
+rlabel metal1 -62 576 -62 576 1 Vdd
+rlabel metal1 -13 512 -13 512 1 m1
+rlabel metal1 34 512 34 512 1 m2
+rlabel metal1 177 250 177 250 1 lutmux2
+rlabel metal1 164 512 164 512 1 lutmux1
+<< end >>
