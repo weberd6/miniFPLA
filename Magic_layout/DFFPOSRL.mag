@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1414808142
+timestamp 1414943428
 << nwell >>
 rect 16 314 205 371
 rect 27 310 54 314
@@ -529,13 +529,13 @@ rect 65 309 69 313
 rect 195 309 199 313
 rect 115 299 119 303
 << labels >>
-rlabel metal1 117 300 117 300 1 Clk
-rlabel metal1 197 310 197 310 1 Q
-rlabel metal1 94 300 94 300 1 muxout2
-rlabel metal1 25 365 25 365 1 Vdd
-rlabel metal1 25 265 25 265 1 Gnd
-rlabel metal1 51 300 51 300 1 muxout1
-rlabel metal1 67 310 67 310 1 Reset
-rlabel polysilicon 57 310 57 310 1 D
 rlabel metal1 24 310 24 310 1 Load
+rlabel polysilicon 57 310 57 310 1 D
+rlabel metal1 67 310 67 310 1 Reset
+rlabel metal1 51 300 51 300 1 muxout1
+rlabel metal1 25 265 25 265 1 Gnd
+rlabel metal1 25 365 25 365 1 Vdd
+rlabel metal1 94 300 94 300 1 muxout2
+rlabel metal1 197 310 197 310 1 Q
+rlabel metal1 117 300 117 300 1 Clk
 << end >>
