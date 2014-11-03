@@ -1,23 +1,44 @@
 magic
 tech scmos
-timestamp 1072203966
-use polyring polyring_3
+timestamp 1414978134
+<< metal1 >>
+rect 1403 1902 1539 1906
+<< m2contact >>
+rect 1399 1902 1403 1906
+rect 1539 1902 1543 1906
+<< metal2 >>
+rect 1355 1861 1363 3568
+rect 1787 1744 1795 3420
+rect 1816 1484 1824 3467
+rect 2248 1432 2256 3416
+rect 2277 1495 2285 3483
+rect 2709 1721 2717 3464
+rect 2738 1509 2746 3443
+rect 3170 1419 3178 3460
+rect 3199 1485 3207 3515
+rect 3631 1409 3639 3462
+use polyring  polyring_3
 timestamp 1072202993
 transform 0 1 1054 -1 0 3950
 box 0 0 150 2900
-use polyring polyring_0
+use PLU  PLU_0
+array 0 4 461 0 3 566
+timestamp 1414978134
+transform 1 0 1347 0 1 1367
+box 1 -27 462 539
+use polyring  polyring_0
 timestamp 1072202993
 transform 1 0 1054 0 1 1050
 box 0 0 150 2900
-use polyring polyring_2
-timestamp 1072202993
-transform 1 0 3804 0 1 1050
-box 0 0 150 2900
-use polyring polyring_1
+use polyring  polyring_1
 timestamp 1072202993
 transform 0 1 1054 -1 0 1200
 box 0 0 150 2900
-use IIT_Frame IIT_Frame_0
+use polyring  polyring_2
+timestamp 1072202993
+transform 1 0 3804 0 1 1050
+box 0 0 150 2900
+use IIT_Frame  IIT_Frame_0
 timestamp 1017812001
 transform 1 0 2503 0 1 2500
 box -2499 -2500 2501 2500
