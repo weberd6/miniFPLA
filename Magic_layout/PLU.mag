@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1414978134
+timestamp 1414992301
 << metal1 >>
 rect 24 527 284 531
 rect 437 527 438 531
@@ -13,8 +13,8 @@ rect 432 497 440 503
 rect 431 397 440 403
 rect 85 390 180 394
 rect 264 390 280 394
+rect 348 390 462 394
 rect 199 382 313 386
-rect 348 382 462 386
 rect 16 365 23 371
 rect 424 314 428 315
 rect 424 311 433 314
@@ -51,12 +51,12 @@ rect 24 -2 231 2
 rect 258 -2 363 2
 rect 20 -9 240 -5
 rect 251 -9 371 -5
-rect 20 -16 206 -12
+rect -6 -16 206 -12
 rect 244 -16 271 -12
 rect 275 -16 281 -12
 rect 285 -16 356 -12
 rect 360 -16 438 -12
-rect 20 -23 424 -19
+rect -9 -23 424 -19
 rect 428 -23 438 -19
 << m2contact >>
 rect 284 527 288 531
@@ -79,8 +79,8 @@ rect 81 390 85 394
 rect 180 390 184 394
 rect 260 390 264 394
 rect 280 390 284 394
+rect 344 390 348 394
 rect 313 382 317 386
-rect 344 382 348 386
 rect 8 363 16 371
 rect 251 311 255 315
 rect 284 311 288 315
@@ -155,7 +155,7 @@ rect 281 -16 285 -12
 rect 356 -16 360 -12
 rect 424 -23 428 -19
 << metal2 >>
-rect 52 517 56 539
+rect 52 517 56 538
 rect 8 371 16 495
 rect 62 447 66 520
 rect 62 438 66 443
@@ -170,7 +170,7 @@ rect 20 2 24 9
 rect 48 2 52 5
 rect 77 2 81 5
 rect 48 -2 81 2
-rect 180 -27 184 390
+rect 180 -40 184 390
 rect 251 315 255 443
 rect 260 394 264 447
 rect 294 447 298 520
@@ -184,7 +184,7 @@ rect 239 118 243 128
 rect 231 114 243 118
 rect 231 62 235 114
 rect 247 62 251 121
-rect 192 -27 196 9
+rect 192 -40 196 9
 rect 206 -12 210 38
 rect 214 9 218 48
 rect 231 2 235 58
@@ -195,7 +195,7 @@ rect 266 125 270 258
 rect 280 255 284 390
 rect 294 315 298 443
 rect 344 437 348 513
-rect 344 386 348 433
+rect 344 394 348 433
 rect 273 125 277 251
 rect 294 185 298 311
 rect 280 113 284 185
@@ -205,7 +205,7 @@ rect 289 62 293 121
 rect 240 -12 244 -9
 rect 271 -12 275 58
 rect 313 62 317 382
-rect 344 305 348 382
+rect 344 305 348 390
 rect 344 175 348 301
 rect 433 314 437 527
 rect 359 125 363 251
@@ -228,25 +228,26 @@ rect 440 20 448 135
 << m1p >>
 rect 20 527 24 531
 rect 451 520 455 524
-rect 458 382 462 386
+rect 458 390 462 394
 rect 434 48 438 52
 rect 1 5 5 9
 rect 20 -9 24 -5
+rect -6 -16 -2 -12
 rect 434 -23 438 -19
 << m2p >>
-rect 52 535 56 539
+rect 52 534 56 538
 rect 206 6 210 10
 rect 192 -7 196 -3
 use DFFPOSRL  DFFPOSRL_1
-timestamp 1414972750
+timestamp 1414990262
 transform 1 0 229 0 1 134
 box 16 256 205 376
 use DFFPOSRL  DFFPOSRL_2
-timestamp 1414972750
+timestamp 1414990262
 transform 1 0 229 0 1 2
 box 16 256 205 376
 use DFFPOSRL  DFFPOSRL_0
-timestamp 1414972750
+timestamp 1414990262
 transform 1 0 229 0 1 -128
 box 16 256 205 376
 use OR2X1  OR2X1_1
@@ -254,11 +255,11 @@ timestamp 1053022145
 transform 1 0 204 0 1 15
 box -8 -3 40 105
 use MUX2X1  MUX2X1_1
-timestamp 1414808142
+timestamp 1414990262
 transform 1 0 237 0 1 15
 box -5 -3 53 105
 use MUX2X1  MUX2X1_2
-timestamp 1414808142
+timestamp 1414990262
 transform 1 0 279 0 1 15
 box -5 -3 53 105
 use INVX1  INVX1_1
@@ -274,17 +275,16 @@ timestamp 1053022145
 transform 1 0 369 0 1 15
 box -9 -3 26 105
 use MUX2X1  MUX2X1_0
-timestamp 1414808142
+timestamp 1414990262
 transform 1 0 385 0 1 15
 box -5 -3 53 105
 use LUT  LUT_0
-timestamp 1414978134
+timestamp 1414990262
 transform 1 0 65 0 1 -78
 box -52 83 193 609
 << labels >>
 rlabel metal2 194 -6 194 -6 1 lut_shift_out
 rlabel m2contact 435 528 435 528 7 mux_ctrl_shift_out
-rlabel metal1 436 49 436 49 7 outp
 rlabel space 232 12 290 120 1 testmux
 rlabel space 274 12 332 120 1 ffloadmux
 rlabel space 329 12 377 120 1 ffloadOr
@@ -294,11 +294,12 @@ rlabel space 380 12 438 120 1 outmux
 rlabel space 196 12 244 120 1 lutloadOR
 rlabel metal1 22 14 22 14 1 Gnd
 rlabel metal2 208 7 208 7 1 Config
-rlabel metal1 436 -22 436 -22 7 pstate_shift_out
 rlabel metal1 22 -8 22 -8 1 pstate_shift_in
 rlabel metal1 21 -15 21 -15 1 Config
 rlabel metal1 453 521 453 521 7 Reset
-rlabel metal1 460 383 460 383 7 Clk
 rlabel metal1 3 6 3 6 3 Test
-rlabel metal2 54 536 54 536 5 lut_shift_in
+rlabel metal1 436 49 436 49 7 outp
+rlabel metal1 460 391 460 391 7 Clk
+rlabel metal2 54 535 54 535 5 lut_shift_in
+rlabel metal1 436 -22 436 -22 1 pstate_shift_out
 << end >>
