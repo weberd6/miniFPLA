@@ -14,7 +14,7 @@ begin
    orgate_process : process (inp1, inp2)
    begin
   
-     outp <= inp1 or inp2;
+     outp <= inp1 or inp2 after 0.6 ns;
   
    end process orgate_process;
 

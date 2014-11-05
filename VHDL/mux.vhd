@@ -15,9 +15,9 @@ architecture mux_behav of mux is
     begin
       
       if s = '0' then
-        c <= a;
+        c <= not a after 1 ns;
       else
-        c <= b;
+        c <= not b after 1 ns;
       end if;
         
       end process mux_process;

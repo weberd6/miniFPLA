@@ -50,6 +50,13 @@ architecture fpla_structural of fpla is
             clk : in std_logic
         );
     end component plu;
+    
+    component inverter
+        port(
+            inp   : in std_logic;
+            outp  : out std_logic
+        );
+    end component;
 
     signal config_or_test : std_logic;
 
@@ -63,6 +70,8 @@ architecture fpla_structural of fpla is
     signal mux_ctrl_shift : std_logic_vector((m*m-m/2-1) downto 0);
 
     signal pstate_shift : std_logic_vector((m*m-m/2-1) downto 0);
+    
+    signal fpla_not_out : std_logic_vector(2*m-1 downto 0);
 
 begin
 
@@ -131,7 +140,7 @@ begin
                     a => top_inout_a(m-1),
                     b => top_inout_b(m-1),
                     s => config_or_test,
-                    c => fpla_out(m/2-1)
+                    c => fpla_not_out(m/2-1)
                 );
 
                 -- right mux
@@ -139,8 +148,16 @@ begin
                     a => right_inout_a(0),
                     b => right_inout_b(0),
                     s => config_or_test,
-                    c => fpla_out(m/2)
+                    c => fpla_not_out(m/2)
                 );
+                
+                not_ij: inverter port map (
+                    inp => fpla_not_out(m/2-1),
+                    outp => fpla_out(m/2-1));
+                    
+                not_ji: inverter port map (
+                    inp => fpla_not_out(m/2),
+                    outp => fpla_out(m/2));
                 
                 top_inout_a(m-1) <= plu_out(j*m+i);
                 right_inout_a(0) <= plu_out(j*m+i);
@@ -168,7 +185,7 @@ begin
                     a => bottom_inout_a(0),
                     b => bottom_inout_b(0),
                     s => config_or_test,
-                    c => fpla_out(2*m-m/2-1)
+                    c => fpla_not_out(2*m-m/2-1)
                 );
 
                 -- left mux
@@ -176,8 +193,16 @@ begin
                     a => left_inout_a(m-1),
                     b => left_inout_b(m-1),
                     s => config_or_test,
-                    c => fpla_out(2*m-m/2)
+                    c => fpla_not_out(2*m-m/2)
                 );
+                
+                not_ij: inverter port map (
+                    inp => fpla_not_out(2*m-m/2-1),
+                    outp => fpla_out(2*m-m/2-1));
+                    
+                not_ji: inverter port map (
+                    inp => fpla_not_out(2*m-m/2),
+                    outp => fpla_out(2*m-m/2));
                 
                 left_inout_a(m-1) <= plu_out(j*m+i);
                 bottom_inout_a(0) <= plu_out(j*m+i);

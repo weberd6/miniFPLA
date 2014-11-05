@@ -38,7 +38,8 @@ architecture plu_structural of plu is
     end component;
 
     component Df_f
-        port (Q : out std_logic;
+        port (
+              Q : out std_logic;
               CLK : in std_logic;
               CE : in std_logic;
               RESET : in std_logic;
@@ -50,8 +51,15 @@ architecture plu_structural of plu is
               s : in std_logic;
               c : out std_logic);
     end component;
+    
+    component inverter
+        port(
+            inp   : in std_logic;
+            outp  : out std_logic
+        );
+    end component;
 
-    signal ld, lut_out, ff_in, ff_out, ld_mux_q, out_mux_q, config_or_test, ld_or_test : std_logic;
+    signal not_ld, ld, not_lut_out, lut_out, ff_in, ff_out, ld_mux_q, out_mux_q, config_or_test, ld_or_test : std_logic;
 
 begin
 
@@ -59,7 +67,11 @@ begin
         inp1 => config,
         inp2 => test,
         outp => config_or_test);
-        
+    
+    inv0: inverter port map (
+        inp => not_ld,
+        outp => ld);
+    
     or1: orgate port map (
         inp1 => ld,
         inp2 => test,
@@ -106,10 +118,14 @@ begin
         a => inp1,
         b => inp2,
         s => ld_mux_q,
-        c => ld);
+        c => not_ld);
+
+    inv1: inverter port map (
+        inp => lut_out,
+        outp => not_lut_out);
 
     out_mux: mux port map (
-        a => lut_out,
+        a => not_lut_out,
         b => ff_out,
         s => out_mux_q,
         c => outp);
