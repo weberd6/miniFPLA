@@ -6,14 +6,15 @@ end entity tb_fpla_half_adder;
 
 architecture fpla_half_adder of tb_fpla_half_adder is
     component fpla
-        generic(m : Integer := 2);
+        generic(R : Integer := 2;
+                C : Integer := 2);
         port(
             clk : in std_logic;
             reset : in std_logic;
             config : in std_logic;
             normal_test : in std_logic;
-            fpla_in : in std_logic_vector(2*m-1 downto 0);
-            fpla_out : out std_logic_vector(2*m-1 downto 0)
+            fpla_in : in std_logic_vector(R+C-1 downto 0);
+            fpla_out : out std_logic_vector(R+C-1 downto 0)
         );
     end component;
     
