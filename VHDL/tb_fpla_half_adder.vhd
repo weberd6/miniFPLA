@@ -13,29 +13,42 @@ architecture fpla_half_adder of tb_fpla_half_adder is
             reset : in std_logic;
             config : in std_logic;
             normal_test : in std_logic;
-            fpla_in : in std_logic_vector(R+C-1 downto 0);
-            fpla_out : out std_logic_vector(R+C-1 downto 0)
+            top_in : in std_logic_vector(((C + (C mod 2))/2 - 1) downto 0);
+            left_in : in std_logic_vector(((R + (R mod 2))/2 - 1) downto 0);
+            bottom_in : in std_logic_vector(((C - (C mod 2))/2 - 1) downto 0);
+            right_in : in std_logic_vector(((R - (R mod 2))/2 - 1) downto 0);
+            top_out : out std_logic_vector(((C - (C mod 2))/2 - 1) downto 0);
+            left_out : out std_logic_vector(((R - (R mod 2))/2 - 1) downto 0);
+            bottom_out : out std_logic_vector(((C + (C mod 2))/2 - 1) downto 0);
+            right_out : out std_logic_vector(((R + (R mod 2))/2 - 1) downto 0)
         );
     end component;
     
-    constant m_tb : integer := 2;
+    constant tb_R, tb_C : integer := 2;
     
     signal t_clk, t_config, t_normal_test : std_logic := '0';
     
-    signal t_fpla_in, t_fpla_out : std_logic_vector(2*m_tb-1 downto 0) := "0000";
+    signal t_fpla_in, t_fpla_out : std_logic_vector((tb_R+tb_C-1) downto 0) := "0000";
 
     signal t_reset : std_logic :=  '1';
     
 begin
 
-    fpla0: fpla generic map(m_tb)
+    fpla0: fpla generic map(tb_R, tb_C)
               port map(
                 clk => t_clk,
                 reset => t_reset,
                 config => t_config,
                 normal_test => t_normal_test,
-                fpla_in => t_fpla_in,
-                fpla_out => t_fpla_out);
+                top_in => t_fpla_in(0 downto 0),
+                left_in => t_fpla_in(3 downto 3),
+                bottom_in => t_fpla_in(2 downto 2),
+                right_in => t_fpla_in(1 downto 1),
+                top_out => t_fpla_out(0 downto 0),
+                left_out => t_fpla_out(3 downto 3),
+                bottom_out => t_fpla_out(2 downto 2),
+                right_out => t_fpla_out(1 downto 1)
+              );
 
     clock_process: process
     begin
