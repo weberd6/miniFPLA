@@ -6,3 +6,10 @@ VHDL/transcript
 *.wlf
 *.zip
 *.ext
+*.tr0
+*.st0
+*.log
+*.lis
+*.ic0
+*.nodes
+*.al
