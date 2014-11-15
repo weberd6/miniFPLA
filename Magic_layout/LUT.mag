@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1414990262
+timestamp 1416016649
 << metal1 >>
 rect 127 584 143 588
 rect -50 575 -43 581
@@ -160,7 +160,6 @@ rlabel metal1 34 512 34 512 1 m2
 rlabel metal1 177 250 177 250 1 lutmux2
 rlabel metal1 164 512 164 512 1 lutmux1
 rlabel metal1 172 380 172 380 1 outp
-rlabel space -43 606 -43 606 5 mux_ctrl_shift_in
 rlabel m1p -48 461 -48 461 3 inp2
 rlabel metal1 -48 330 -48 330 3 inp1
 rlabel m2p -1 129 -1 129 1 Reset

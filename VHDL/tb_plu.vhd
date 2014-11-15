@@ -27,6 +27,10 @@ architecture tb_behav of tb_plu is
       
     signal t_reset : std_logic := '1';
     
+    constant T_off : time := 5 ns;
+    constant T_on : time := 5 ns;
+    constant T : time := T_on + T_off;
+    
 begin
     plu1: plu port map(
                     t_inp1, t_inp2,
@@ -42,10 +46,14 @@ begin
                     t_reset,
                     t_clk);
 
-    clock_process : process
+    clock_process: process
     begin
         clk_loop: loop
-            wait for 5 ns;
+            if (t_clk = '0') then
+               wait for T_off;
+            elsif (t_clk = '1') then
+                wait for T_on;
+            end if;
             t_clk <= not t_clk;
         end loop clk_loop;
     end process clock_process;
@@ -53,76 +61,69 @@ begin
     test_process  : process
         variable test : integer := 3;
     begin
-        wait for 7.5 ns;
+        wait for T;
 
         t_reset <= '0';
         t_config <= '1';
-        wait for 15 ns;
+        wait for T;
         
         t_lut_shift_in <= '1';
       
         if (test = 0) then    -- 0 for ld mux, 0 for out mux
-            wait for 15 ns;
+            wait for 2*T;
 
             t_lut_shift_in <= '0';
-            wait for 15 ns;
+            wait for T;
         
             t_config <= '0';
-            wait for 15 ns;
+            wait for 2*T;
         elsif (test = 2) then -- 1 for ld mux, 0 for out mux
-            wait for 15 ns;
+            wait for 2*T;
+
             t_lut_shift_in <= '0';
-            
-            wait for 5 ns;
-        
             t_mux_ctrl_shift_in <= '1';
-            wait for 10 ns;
+            
+            wait for T;
         
             t_config <= '0';
             t_mux_ctrl_shift_in <= '0';
-            wait for 10 ns;
+            wait for T;
         elsif (test = 1) then -- 0 for ld mux, 1 for out mux
-            wait for 10 ns;
+            wait for 2*T;
             
             t_mux_ctrl_shift_in <= '1';
-            wait for 5 ns;
-            
             t_lut_shift_in <= '0';
-            wait for 5 ns;
+            wait for T;
             
             t_mux_ctrl_shift_in <= '0';
-            wait for 10 ns;
-            
             t_config <= '0';
-            wait for 10 ns;
+            wait for T;
         elsif (test = 3) then -- 1 for ld mux, 1 for out mux
-            wait for 10 ns;
+            wait for T;
             
             t_mux_ctrl_shift_in <= '1';
-            wait for 5 ns;
+            wait for T;
             
             t_lut_shift_in <= '0';
-            wait for 10 ns;
+            wait for T;
             
             t_mux_ctrl_shift_in <= '0';
-            wait for 5 ns;
-            
             t_config <= '0';
-            wait for 10 ns;
+            wait for T;
         end if;
        
         t_inp2 <= '1';
-        wait for 10 ns;
+        wait for T;
         
         t_inp1 <= '1';
         t_inp2 <= '0';
-        wait for 10 ns;
+        wait for T;
         
         t_inp2 <= '1';
-        wait for 10 ns;
+        wait for T;
         
         t_inp2 <= '0';
-        wait for 20 ns;
+        wait for T;
         
         wait;
     end process test_process;

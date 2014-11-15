@@ -18,10 +18,10 @@ begin  --"begin" statement for architecture.
     begin  --"begin" statment for the process.
         if ( rising_edge(CLK) ) then  
             if (RESET = '1') then
-                Q <= '0' after 1.5 ns;
+                Q <= '0';-- after 1.5 ns;
             elsif(RESET = '0') then
                 if ( CE = '1') then
-         	          Q <= D after 1.5 ns;       
+         	          Q <= D;-- after 1.5 ns;       
                 end if;
             end if;
         end if;       
