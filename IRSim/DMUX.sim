@@ -1,0 +1,34 @@
+| units: 30 tech: scmos format: MIT
+p S Vdd a_n1_12# 2 20 -3 80
+p G Vdd a_8_12# 2 20 13 80
+p S a_8_12# Vdd 2 20 21 80
+p a_8_12# Vdd D1 2 20 29 80
+p a_n1_12# Vdd a_40_12# 2 20 45 80
+p G a_40_12# Vdd 2 20 53 80
+p a_40_12# Vdd D0 2 20 61 80
+n S Gnd a_n1_12# 2 10 -3 12
+n G a_8_12# a_15_12# 2 20 13 12
+n S a_15_12# Gnd 2 20 18 12
+n a_8_12# Gnd D1 2 10 26 12
+n a_n1_12# a_40_12# a_47_12# 2 20 45 12
+n G a_47_12# Gnd 2 20 50 12
+n a_40_12# Gnd D0 2 10 58 12
+C Vdd S 2.8
+C Vdd a_n1_12# 2.3
+R a_47_12# 548
+R a_15_12# 548
+C Gnd GND 6.3
+R Gnd 3087
+R D0 588
+R D1 589
+C a_40_12# GND 3.2
+R a_40_12# 1700
+C a_n1_12# GND 4.9
+R a_n1_12# 1601
+C a_8_12# GND 2.9
+R a_8_12# 1700
+R G 2104
+C S GND 3.3
+R S 2103
+C Vdd GND 25.3
+R Vdd 5782
