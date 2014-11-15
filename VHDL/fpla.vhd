@@ -241,7 +241,7 @@ begin
                   demux_ij: demux port map(
                       a => right_in((j-1)/2),
                       s => config_or_test,
-                      b => plu_in(2*(j*C+i)),
+                      b => plu_in(2*(j*C+i)+1),
                       c => pstate_shift(j*(C+1)+i+1)
                   );
                   
