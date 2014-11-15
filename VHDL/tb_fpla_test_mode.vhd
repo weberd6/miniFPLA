@@ -33,6 +33,10 @@ architecture fpla_test_mode of tb_fpla_test_mode is
 
     signal t_reset : std_logic :=  '1';
     
+    constant T_off : time := 5 ns;
+    constant T_on : time := 5 ns;
+    constant T : time := T_on + T_off;
+    
 begin
 
     fpla0: fpla generic map(tb_R, tb_C)
@@ -54,72 +58,75 @@ begin
     clock_process: process
     begin
         clk_loop: loop
-            wait for 5 ns;
+            if (t_clk = '0') then
+               wait for T_off;
+            elsif (t_clk = '1') then
+                wait for T_on;
+            end if;
             t_clk <= not t_clk;
         end loop clk_loop;
     end process clock_process;
 
     test_process: process
     begin
-        wait for 7.5 ns;
+        wait for T;
         
         t_reset <= '0';
         t_normal_test <= '1';
-        wait for 5 ns;
         
         t_fpla_in <= "111110101";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "101011100";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "110011000";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "000011111";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "011011010";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "100111111";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "010011010";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "011100011";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "011010110";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "101111001";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "011111000";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "101010101";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "100111001";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "101010001";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "010101011";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "100000111";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "111111111";
-        wait for 10 ns;
+        wait for T;
         
         t_fpla_in <= "010011000";
-        wait for 10 ns;
+        wait;
 
     end process test_process;
 

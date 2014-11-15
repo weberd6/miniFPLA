@@ -298,7 +298,7 @@ begin
               
               right: if ((i = (C-1)) and ((j mod 2) = 0)) generate
                   mux_ij: mux port map(
-                      a => plu_out(j*C + i),
+                      a => plu_out(j*C+i),
                       b => pstate_shift(j*(C+1)+i+1),
                       s => config_or_test,
                       c => right_out_not(j/2)
