@@ -26,7 +26,7 @@ setvector Sin 10
 s
 setvector Clock 1
 s
-setvector Sin 11
+setvector Sin 10
 setvector Clock 0
 s
 setvector Clock 1

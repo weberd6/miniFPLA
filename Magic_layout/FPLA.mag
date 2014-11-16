@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1416098149
+timestamp 1416164212
 << metal1 >>
 rect 2342 3992 2354 4004
 rect 1008 3980 1309 3992
@@ -89,18 +89,22 @@ rect 3599 3631 3661 3635
 rect 1048 3627 1350 3631
 rect 3101 3624 3151 3628
 rect 1326 3608 1350 3614
-rect 1742 3608 1760 3614
 rect 3673 3606 3952 3611
 rect 1750 3548 1754 3552
 rect 1224 3541 1235 3545
 rect 1239 3541 1250 3545
 rect 1327 3508 1346 3514
-rect 1742 3508 1760 3514
 rect 1232 3501 1242 3505
-rect 1742 3493 1816 3497
+rect 1742 3493 1838 3497
 rect 2684 3493 2758 3497
 rect 3960 3445 3972 3732
+rect 1584 3369 1592 3373
+rect 2057 3369 2063 3373
+rect 2513 3369 2534 3373
+rect 2984 3369 3005 3373
+rect 3455 3369 3475 3373
 rect 1324 3362 1354 3366
+rect 1836 3362 1852 3366
 rect 2213 3362 2287 3366
 rect 3155 3362 3229 3366
 rect 1028 3068 1040 3356
@@ -155,6 +159,11 @@ rect 1298 2959 1302 2966
 rect 1314 2930 1352 2936
 rect 1048 2846 1305 2851
 rect 3960 2844 3972 3132
+rect 1571 2791 1592 2795
+rect 2042 2791 2063 2795
+rect 2513 2791 2534 2795
+rect 2984 2791 3005 2795
+rect 3455 2791 3476 2795
 rect 3960 2791 3972 2832
 rect 1028 2255 1040 2756
 rect 3684 2654 3771 2658
@@ -201,6 +210,11 @@ rect 1742 2337 1816 2341
 rect 2684 2337 2758 2341
 rect 1028 2167 1040 2243
 rect 3960 2245 3972 2779
+rect 1571 2213 1592 2217
+rect 2042 2213 2063 2217
+rect 2513 2213 2534 2217
+rect 2984 2213 3005 2217
+rect 3455 2213 3476 2217
 rect 1311 2206 1356 2210
 rect 2213 2206 2287 2210
 rect 3155 2206 3229 2210
@@ -253,6 +267,11 @@ rect 1297 1802 1301 1810
 rect 1311 1774 1352 1780
 rect 1048 1646 1304 1651
 rect 3960 1644 3972 1932
+rect 1571 1635 1592 1639
+rect 2042 1635 2063 1639
+rect 2513 1635 2534 1639
+rect 2984 1635 3004 1639
+rect 3455 1635 3476 1639
 rect 1028 1040 1040 1556
 rect 3960 1591 3972 1632
 rect 3684 1498 3771 1502
@@ -481,9 +500,10 @@ rect 1738 3493 1742 3497
 rect 2305 3493 2309 3497
 rect 2680 3493 2684 3497
 rect 3248 3493 3252 3497
-rect 1028 3356 1040 3368
 rect 3960 3433 3972 3445
+rect 1028 3356 1040 3368
 rect 1320 3362 1324 3366
+rect 1832 3362 1836 3366
 rect 2209 3362 2213 3366
 rect 2775 3362 2779 3366
 rect 3151 3362 3155 3366
@@ -1068,7 +1088,6 @@ rect 1362 2507 1366 2784
 rect 1738 2607 1742 3074
 rect 1738 2500 1742 2573
 rect 1362 2341 1366 2496
-rect 1378 2468 1382 2472
 rect 1738 2029 1742 2337
 rect 1355 1936 1425 1940
 rect 1355 1915 1359 1936
@@ -1084,10 +1103,9 @@ rect 1421 1900 1529 1904
 rect 1362 1763 1366 1896
 rect 1362 1351 1366 1628
 rect 1738 1451 1742 1918
-rect 1532 1369 1536 1388
 rect 1738 1379 1742 1417
-rect 1717 1375 1742 1379
 rect 1350 1347 1351 1351
+rect 1717 1375 1742 1379
 rect 998 1044 1020 1053
 rect 1011 1020 1020 1044
 rect 1044 1020 1053 1028
@@ -1148,7 +1166,7 @@ rect 2245 3644 2249 3671
 rect 2253 3653 2257 3681
 rect 2253 3649 2273 3653
 rect 2245 3640 2266 3644
-rect 1832 3085 1836 3366
+rect 1832 3085 1836 3362
 rect 2209 3185 2213 3362
 rect 2230 3092 2234 3102
 rect 1875 3078 1897 3082
@@ -1526,135 +1544,131 @@ rect 3975 1034 4000 1043
 rect 2602 996 2642 1000
 rect 2654 996 2698 1000
 rect 2620 994 2634 996
-use DMUX DMUX_0
+use DMUX  DMUX_0
 timestamp 1416012586
 transform 1 0 1254 0 1 3642
 box -19 3 78 111
-use MUX2X1 MUX2X1_5
+use MUX2X1  MUX2X1_5
 timestamp 1414990262
 transform 1 0 1816 0 1 3648
 box -5 -3 53 105
-use INVX1 INVX1_0
+use INVX1  INVX1_0
 timestamp 1053022145
 transform 1 0 1858 0 1 3648
 box -9 -3 26 105
-use OR2X1 OR2X1_0
+use OR2X1  OR2X1_0
 timestamp 1053022145
 transform 1 0 2243 0 1 3648
 box -8 -3 40 105
-use DMUX DMUX_2
+use DMUX  DMUX_2
 timestamp 1416012586
 transform 1 0 2667 0 1 3642
 box -19 3 78 111
-use MUX2X1 MUX2X1_6
+use MUX2X1  MUX2X1_6
 timestamp 1414990262
 transform 1 0 2758 0 1 3648
 box -5 -3 53 105
-use INVX1 INVX1_1
+use INVX1  INVX1_1
 timestamp 1053022145
 transform 1 0 2800 0 1 3648
 box -9 -3 26 105
-use DMUX DMUX_4
+use DMUX  DMUX_4
 timestamp 1416012586
 transform 1 0 3138 0 1 3642
 box -19 3 78 111
-use DFFPOSRL DFFPOSRL_0
+use DFFPOSRL  DFFPOSRL_0
 timestamp 1414990262
 transform 1 0 3530 0 1 3382
 box 16 256 205 376
-use DMUX DMUX_1
+use DMUX  DMUX_1
 timestamp 1416012586
 transform 1 0 1255 0 1 3505
 box -19 3 78 111
-use MUX2X1 MUX2X1_7
+use MUX2X1  MUX2X1_7
 timestamp 1414990262
 transform 1 0 3673 0 1 3126
 box -5 -3 53 105
-use INVX1 INVX1_7
+use INVX1  INVX1_7
 timestamp 1053022145
 transform 1 0 3715 0 1 3126
 box -9 -3 26 105
-use MUX2X1 MUX2X1_4
+use MUX2X1  MUX2X1_4
 timestamp 1414990262
 transform 1 0 1254 0 1 2933
 box -5 -3 53 105
-use INVX1 INVX1_2
+use INVX1  INVX1_2
 timestamp 1053022145
 transform 1 0 1296 0 1 2933
 box -9 -3 26 105
-use DMUX DMUX_5
+use DMUX  DMUX_5
 timestamp 1416012586
 transform 1 0 3688 0 1 2542
 box -19 3 78 111
-use DMUX DMUX_3
+use DMUX  DMUX_3
 timestamp 1416012586
 transform 1 0 1242 0 1 2349
 box -19 3 78 111
-use MUX2X1 MUX2X1_8
+use MUX2X1  MUX2X1_8
 timestamp 1414990262
 transform 1 0 3673 0 1 1970
 box -5 -3 53 105
-use INVX1 INVX1_8
+use INVX1  INVX1_8
 timestamp 1053022145
 transform 1 0 3715 0 1 1970
 box -9 -3 26 105
-use MUX2X1 MUX2X1_0
+use MUX2X1  MUX2X1_0
 timestamp 1414990262
 transform 1 0 1253 0 1 1777
 box -5 -3 53 105
-use INVX1 INVX1_3
+use INVX1  INVX1_3
 timestamp 1053022145
 transform 1 0 1295 0 1 1777
 box -9 -3 26 105
-use DMUX DMUX_6
+use DMUX  DMUX_6
 timestamp 1416012586
 transform 1 0 3688 0 1 1386
 box -19 3 78 111
-use PLU PLU_0
+use PLU  PLU_0
 array 0 4 471 0 3 578
 timestamp 1416027737
 transform 1 0 1326 0 1 1377
 box -9 -40 462 538
-use MUX2X1 MUX2X1_1
+use MUX2X1  MUX2X1_1
 timestamp 1414990262
 transform 1 0 1707 0 1 1241
 box -5 -3 53 105
-use INVX1 INVX1_4
+use INVX1  INVX1_4
 timestamp 1053022145
 transform 1 0 1749 0 1 1241
 box -9 -3 26 105
-use DMUX DMUX_7
+use DMUX  DMUX_7
 timestamp 1416012586
 transform 1 0 1806 0 1 1235
 box -19 3 78 111
-use MUX2X1 MUX2X1_2
+use MUX2X1  MUX2X1_2
 timestamp 1414990262
 transform 1 0 2648 0 1 1241
 box -5 -3 53 105
-use INVX1 INVX1_5
+use INVX1  INVX1_5
 timestamp 1053022145
 transform 1 0 2691 0 1 1241
 box -9 -3 26 105
-use DMUX DMUX_8
+use DMUX  DMUX_8
 timestamp 1416012586
 transform 1 0 3103 0 1 1235
 box -19 3 78 111
-use MUX2X1 MUX2X1_3
+use MUX2X1  MUX2X1_3
 timestamp 1414990262
 transform 1 0 3591 0 1 1241
 box -5 -3 53 105
-use INVX1 INVX1_6
+use INVX1  INVX1_6
 timestamp 1053022145
 transform 1 0 3633 0 1 1241
 box -9 -3 26 105
-use INVX1 INVX1_9
+use INVX1  INVX1_9
 timestamp 1053022145
 transform 1 0 3703 0 1 1241
 box -9 -3 26 105
-use IIT_Frame_PR IIT_Frame_PR_0
-timestamp 1415033039
-transform 1 0 -4 0 1 0
-box 4 0 5004 5000
 << labels >>
 rlabel metal2 1261 3993 1261 3993 1 In0
 rlabel metal2 1352 3993 1352 3993 1 Gnd_out
@@ -1682,7 +1696,6 @@ rlabel metal2 2848 1005 2848 1005 1 Out5
 rlabel metal2 2461 1007 2461 1007 1 Clk
 rlabel metal2 2161 1004 2161 1004 1 In6
 rlabel metal2 1648 1005 1648 1005 1 Out6
-rlabel metal2 1348 1004 1348 1004 1 t16
 rlabel metal2 1261 1004 1261 1004 1 Test
 rlabel metal2 1004 1260 1004 1260 1 Cfg
 rlabel metal2 1005 1347 1005 1347 1 t11
@@ -1702,11 +1715,7 @@ rlabel metal1 2346 3985 2346 3985 1 Vdd
 rlabel metal1 2645 1033 2645 1033 1 Gnd
 rlabel metal1 1788 3639 1788 3639 1 first_mux_shift
 rlabel metal1 1783 2483 1783 2483 1 second_mux_shift
-rlabel metal1 2265 3755 2265 3755 1 Test_or_config
-rlabel metal1 1248 3542 1248 3542 1 select_in
 rlabel metal1 1751 3550 1751 3550 1 first_muxff_out
-rlabel metal1 1744 3610 1744 3610 1 test_vdd
-rlabel metal1 1743 3510 1743 3510 1 test_gnd
 rlabel metal2 3685 3234 3685 3234 1 output4
 rlabel metal2 2210 3237 2210 3237 1 output1
 rlabel metal2 2682 3116 2682 3116 1 output2
@@ -1722,10 +1731,47 @@ rlabel metal2 2681 1953 2681 1953 1 output12
 rlabel metal2 3153 2082 3153 2082 1 output13
 rlabel metal2 3624 1961 3624 1961 1 output14
 rlabel metal2 1738 1380 1738 1380 1 output15
-rlabel metal2 2210 1381 2210 1381 1 output16
 rlabel metal2 2681 1381 2681 1381 1 output17
 rlabel metal2 3152 1373 3152 1373 1 output18
 rlabel metal2 3622 1377 3622 1377 1 output19
 rlabel metal2 1740 3239 1740 3239 1 output0
-rlabel metal2 1534 1374 1534 1374 1 config15
+rlabel metal2 1348 1004 1348 1004 1 t16
+rlabel metal2 2210 1381 2210 1381 1 output16
+rlabel metal2 2737 3656 2737 3656 1 in1_D0
+rlabel metal1 2646 3663 2646 3663 1 in1_D1
+rlabel metal1 3238 3715 3238 3715 1 in2_D0
+rlabel metal1 3240 3670 3240 3670 1 in2_D1
+rlabel metal2 3765 2590 3765 2590 1 in3_D0
+rlabel metal2 3754 2526 3754 2526 1 in3_D1
+rlabel metal2 3765 1423 3765 1423 1 in4_D0
+rlabel metal1 3742 1362 3742 1362 1 in4_D1
+rlabel metal1 3163 1233 3163 1233 1 in5_D1
+rlabel metal1 3068 1325 3068 1325 1 in5_D0
+rlabel metal2 1880 1269 1880 1269 1 in6_D1
+rlabel metal2 1835 1353 1835 1353 1 in6_D0
+rlabel metal2 1314 2382 1314 2382 1 in7_D1
+rlabel metal2 1308 2347 1308 2347 1 in7_D0
+rlabel metal1 1850 3363 1850 3363 1 inp1_1
+rlabel metal1 2288 3756 2288 3756 1 Test_or_config
+rlabel metal1 2059 3371 2059 3371 1 lut_out1
+rlabel metal1 1586 3370 1586 3370 1 lut_out0
+rlabel metal1 2528 3370 2528 3370 1 lut_out2
+rlabel metal1 2998 3370 2998 3370 1 lut_out3
+rlabel metal1 3470 3370 3470 3370 1 lut_out4
+rlabel metal1 1585 2792 1585 2792 1 lut_out5
+rlabel metal1 2056 2792 2056 2792 1 lut_out6
+rlabel metal1 2528 2793 2528 2793 1 lut_out7
+rlabel metal1 2998 2792 2998 2792 1 lut_out8
+rlabel metal1 3469 2792 3469 2792 1 lut_out9
+rlabel metal1 1585 2214 1585 2214 1 lut_out10
+rlabel metal1 2057 2214 2057 2214 1 lut_out11
+rlabel metal1 2527 2215 2527 2215 1 lut_out12
+rlabel metal1 2998 2214 2998 2214 1 lut_out13
+rlabel metal1 3470 2214 3470 2214 1 lut_out14
+rlabel metal1 1586 1636 1586 1636 1 lut_out15
+rlabel metal1 2057 1636 2057 1636 1 lut_out16
+rlabel metal1 2527 1637 2527 1637 1 lut_out17
+rlabel metal1 2997 1636 2997 1636 1 lut_out18
+rlabel metal1 3469 1636 3469 1636 1 lut_out19
+rlabel metal1 1834 3494 1834 3494 1 inp2_1
 << end >>
