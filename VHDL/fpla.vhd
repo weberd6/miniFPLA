@@ -238,12 +238,23 @@ begin
               end generate left;
               
               right: if ((i = (C-1)) and ((j mod 2) = 1)) generate
-                  demux_ij: demux port map(
-                      a => right_in((j-1)/2),
-                      s => config_or_test,
-                      b => plu_in(2*(j*C+i)+1),
-                      c => pstate_shift(j*(C+1)+i+1)
-                  );
+                  even_number_of_columns: if ((C mod 2) = 0) generate
+                      demux_ij: demux port map(
+                          a => right_in((j-1)/2),
+                          s => config_or_test,
+                          b => plu_in(2*(j*C+i)+1),
+                          c => pstate_shift(j*(C+1)+i+1)
+                      );
+                  end generate even_number_of_columns;
+                  
+                  odd_number_of_columns: if ((C mod 2) = 1) generate
+                      demux_ij: demux port map(
+                          a => right_in((j-1)/2),
+                          s => config_or_test,
+                          b => plu_in(2*(j*C+i)),
+                          c => pstate_shift(j*(C+1)+i+1)
+                      );
+                  end generate odd_number_of_columns;
                   
                   mux_ctrl_shift(j*(C+1)+i+1) <= mux_ctrl_shift(j*(C+1)+i-C);
                   
